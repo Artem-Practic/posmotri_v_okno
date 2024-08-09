@@ -168,6 +168,10 @@ ol {
   vertical-align: middle;
 }
 
+.search-form__label:hover{
+  cursor: pointer;
+}
+
 .search-form__textfield,
 .search-form__checkbox {
   cursor: pointer;
@@ -234,6 +238,16 @@ ol {
   height: 15px;
   border: 1px solid #1b1919;
   background-color: transparent;
+  margin-bottom: 1px;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox:before {
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid #fff;
+  background-color: currentColor;
   margin-bottom: 1px;
 }
 
